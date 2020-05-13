@@ -1,0 +1,13 @@
+// !!! Removing Vol weighted Price after requesting ALL data
+// - due to incorrect data
+d.type === 'volume_weighted_price'
+
+updateDomains(res) {
+    // Find out about available domains first before flattening data
+    this.updateEnergyDomains(res)
+    this.updateEmissionDomains(res)
+    this.updateMarketValueDomains(res)
+    this.updateTemperatureDomains(res)
+    this.updatePriceDomains(res)
+}
+
