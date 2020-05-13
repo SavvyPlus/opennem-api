@@ -80,7 +80,7 @@ Available intervals are:
 **We have three options:**
 
 * request `1d, 3d and 7d` always return `5m data`; request `30d, 1y and all` always return `daily data` frontend has to group data to `30m, week, month` 
-* request date range and interval together. Ex 3d+30m, 1y+week, 1y+month. Drontend doesn't have to group data. This apporach user click date range then click interval the web will fetch data and show charts
+* request date range and interval together. Ex `3d+30m, 1y+week, 1y+month`. Frontend doesn't have to group data. This apporach user click date range then click interval the web will fetch data and show charts
 * request date range, api will include all intervals. The response obj could be large.
 
 ## Data Format
