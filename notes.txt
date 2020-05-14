@@ -11,3 +11,14 @@ updateDomains(res) {
     this.updatePriceDomains(res)
 }
 
+steps:
+handleResponses(responses)
+updateDomains(responses) # get values of each domains
+EnergyDataTransform.mergeResponses(*args) -> dataset
+readyDataset(dataset)
+group data
+roll up data (resample)
+
+apis to export CSV files to download from web
+
+* notes: may need to calculate static statistic in apis instead on frontent 
